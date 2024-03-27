@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dly.mapper.ZhongzigongyingshangMapper">
+
+    <resultMap id="BaseResultMap" type="com.dly.entity.ZhongzigongyingshangEntity">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="addtime" column="addtime" jdbcType="TIMESTAMP"/>
+            <result property="gongyingshangmingcheng" column="gongyingshangmingcheng" jdbcType="VARCHAR"/>
+            <result property="fengmian" column="fengmian" jdbcType="VARCHAR"/>
+            <result property="jingyingfanwei" column="jingyingfanwei" jdbcType="VARCHAR"/>
+            <result property="dizhi" column="dizhi" jdbcType="VARCHAR"/>
+            <result property="dianhua" column="dianhua" jdbcType="VARCHAR"/>
+            <result property="zhongzimingcheng" column="zhongzimingcheng" jdbcType="VARCHAR"/>
+            <result property="xiaoshoujiage" column="xiaoshoujiage" jdbcType="VARCHAR"/>
+            <result property="thumbsupnum" column="thumbsupnum" jdbcType="INTEGER"/>
+            <result property="crazilynum" column="crazilynum" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,addtime,gongyingshangmingcheng,
+        fengmian,jingyingfanwei,dizhi,
+        dianhua,zhongzimingcheng,xiaoshoujiage,
+        thumbsupnum,crazilynum
+    </sql>
+</mapper>

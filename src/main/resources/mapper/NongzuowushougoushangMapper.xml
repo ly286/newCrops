@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dly.mapper.NongzuowushougoushangMapper">
+
+    <resultMap id="BaseResultMap" type="com.dly.entity.NongzuowushougoushangEntity">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="addtime" column="addtime" jdbcType="TIMESTAMP"/>
+            <result property="shougoushangmingcheng" column="shougoushangmingcheng" jdbcType="VARCHAR"/>
+            <result property="fengmian" column="fengmian" jdbcType="VARCHAR"/>
+            <result property="jingyingfanwei" column="jingyingfanwei" jdbcType="VARCHAR"/>
+            <result property="dizhi" column="dizhi" jdbcType="VARCHAR"/>
+            <result property="dianhua" column="dianhua" jdbcType="VARCHAR"/>
+            <result property="nongzuowumingcheng" column="nongzuowumingcheng" jdbcType="VARCHAR"/>
+            <result property="shougoujiage" column="shougoujiage" jdbcType="VARCHAR"/>
+            <result property="thumbsupnum" column="thumbsupnum" jdbcType="INTEGER"/>
+            <result property="crazilynum" column="crazilynum" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,addtime,shougoushangmingcheng,
+        fengmian,jingyingfanwei,dizhi,
+        dianhua,nongzuowumingcheng,shougoujiage,
+        thumbsupnum,crazilynum
+    </sql>
+</mapper>
